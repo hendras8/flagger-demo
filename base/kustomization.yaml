@@ -1,7 +1,6 @@
 namespace: flagger-system
 commonLabels:
   service_name: flagger
-  service_type: flagger
 resources:
   - namespace.yaml
   - account.yaml
