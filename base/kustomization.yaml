@@ -1,0 +1,14 @@
+namespace: flagger-system
+commonLabels:
+  service_name: flagger
+  service_type: flagger
+resources:
+  - namespace.yaml
+  - account.yaml
+  - rbac.yaml
+  - crd.yaml
+  - deployment.yaml
+images:
+  - name: ghcr.io/fluxcd/flagger
+    newName: ghcr.io/fluxcd/flagger
+    newTag: 1.38.0
